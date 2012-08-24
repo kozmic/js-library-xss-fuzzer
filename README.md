@@ -18,7 +18,8 @@ This project executes all functions in a configurable Javascript framework with 
 Tested in Chrome 20 and 21.
 
 # Example: Test result screenshot
-Screenshot after fuzzing jQuery 1.8.0:
+## Screenshot after fuzzing jQuery 1.8.0:
+
 ![jQuery 1.8.0 result](https://raw.github.com/kozmic/js-library-xss-fuzzer/master/css/test_run_example_jquery_180.png)
 
 
