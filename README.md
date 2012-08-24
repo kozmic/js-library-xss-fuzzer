@@ -5,16 +5,21 @@ This project executes all functions in a configurable Javascript framework with 
 
 
 # Running the tests
+* By default the tests run against jQuery 1.8.0 which is included. To run against another framework:
+ * Open `js/functions-fuzzer.js` in your favorite editor.
+  * Configure `window.libraryName`, only use to display name in result page (example `valuejQuery 1.8.0`).
+  * Configure `window.libraryFunction`, the variable the library to test binds to, all functions bound to this variable are tested (example `$` for jQuery).
+ * Change the script tag in `index.html` to point to the library you want to test.
 * Start a HTTP server with the repository as server root.
  * Python: `python -m SimpleHTTPServer`
  * Ruby: `ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => Dir.pwd).start'`
 * Point your favorite browser (read Chrome) to `http://localhost:8000`
 
-Tested in Chrome 20.0.1132.47.
+Tested in Chrome 20 and 21.
 
 # Example: Test result screenshot
 Screenshot after fuzzing jQuery 1.8.0:
-![jQuery 1.8.0 result](css/test_run_example_jquery_180.png)
+![jQuery 1.8.0 result](https://raw.github.com/kozmic/js-library-xss-fuzzer/master/css/test_run_example_jquery_180.png)
 
 
 # Test results
